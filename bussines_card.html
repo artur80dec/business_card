@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bussines Card</title>
+    <style>
+        body
+        {
+            background: url('https://cdn.pixabay.com/photo/2020/02/16/20/29/nyc-4854718_960_720.jpg') no-repeat center fixed;
+            /* no- repeat - nie powtarzają się obrazki, center - obrazek idzie na środek w poziomie, fixed - obrazek idzie na środek w pionie */
+            background-size: cover;
+            /* obrazek rozciąga się na całkowity obszar przeglądarki */
+        }
+
+        .container
+        {
+            margin: 60px auto;
+            padding: 30px;
+            background-color: black;
+            width: 400px;
+            height: 160px;
+            color: silver;
+        }
+
+        .business-card img
+        {
+            float: left;
+        }
+
+        .username, .email, .download-cv
+        {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        .username span
+        {
+            border-bottom: 2px solid red;
+            padding-bottom: 2px;
+        }
+
+        .email
+        {
+            font-size: 15px;
+        }
+
+        .download-cv a
+        {
+            color: red;
+            font-size: 12px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="business-card">
+            <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="może być">
+            <p class="username">
+                <span>Mania Makowska</span>
+            </p>
+            <p class="email">
+                <span>mania@makowska.com</span>
+            </p>
+            <p class="download-cv">
+                <span>
+                    <a href="#">Download CV</a>
+                </span>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
